@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TicTacToe</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/master.js"></script>
+<style>
+	tr, td {
+		width: 200px; height: 200px;
+	}
+</style>
+
+</head>
+<body style="background-color:#F2F3D0">
+<script>
+	/*
+for (var i = 1; i <= 5000; i++) {
+	document.writeln(i + "<br>");
+}
+<table>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+*/
+
+var builder = "<table>";
+for (var i = 0; i < 3; i++) {
+	builder += "<tr>";
+	for (var j = 0; j < 3; j++) {
+		builder += "<td>Yes</td>";
+		}
+		
+	}
+
+	builder += "<tr>";
+
+
+builder 
+</script>
+	</div>
+	<div id="playerInfo">
+		Player 1 &nbsp;&nbsp;
+		<input type="text" id="player1Name" placeholder="Please enter your name" size="25" />
+		<br>
+		<br>
+		<select id="player1Image" onchange="enterPlayer('player1')">
+			<option value="#">--Select your avatar--</option>
+			<option value="ditto">ditto</option>
+			<option value="celebi">celebi</option>
+			<option value="lugia">lugia</option>
+		</select>
+		<div id="player1Info"></div>
+		<br>
+		<hr>
+		Player 2 &nbsp;&nbsp;
+		<input type="text" id="player2Name" placeholder="Please enter your name" size="25"/>
+		<br>
+		<br>
+		<select id="player2Image" onchange="enterplayer('player2')">
+			<option value="#">--Select your avatar--</option>
+			<option value="solgaleo">solgaleo</option>
+			<option value="lunala">lunala</option>
+			<option value="silvally">silvally</option>
+		</select>
+		<div id="player2Info"></div>
+	</div>
+<div>
+<button onclick="isPalindrome()">Check Palindrome</button>
+<br>
+<button onclick="convertRoman()">Check Roman</button>
+</div>
+	
+	<h1 style="font-size:50px">!TicTacToe!</h1>
+	<table border="1">
+	<tr>
+		<td style="background-color: #C1DDEE"></td>
+		<td style="background-color: #D3EEC1"></td>
+		<td style="background-color: #C1DDEE"></td>
+	</tr>
+
+	<tr>
+		<td style="background-color: #D3EEC1"></td>
+		<td style="background-color: #C1DDEE"></td>
+		<td style="background-color: #D3EEC1"></td>
+	</tr>
+
+	<tr>
+		<td style="background-color: #C1DDEE"></td>
+		<td style="background-color: #D3EEC1"></td>
+		<td style="background-color: #C1DDEE"></td>
+	</tr>
+</body>
+</html>
