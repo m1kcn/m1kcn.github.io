@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All About Catherine</title>
+<script>
+	function isPrime() {
+		//alert("Hello World")
+
+		/* Prime number can only be divisible by 1 and itself
+		/ p = {2, 3, 4, 7, 11...... 101}
+		/ !p = {4, 6, 9, 15, .... 225...}
+
+		/ x = 49
+		/ let i be a possible divisor, starting from 2
+		/ you check 2, 2 + 1, 2 + 2...., x - 1
+
+		12 % 7 = 5
+		11 % 2 = 1
+		*/
+		//var x = 289;
+		var prime = true;
+
+		// 8
+		// factors =  1, 2, Sqrt (8), 4, 8
+
+		// 25
+
+		// 2, 
+
+		// 13
+
+		// 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+
+		// 67
+
+		// 12
+
+		//1, 2, 3, 4, 6, 12
+
+
+		for(var i = 2; i <= Math.sqrt(x); i++) {
+			if (x % i == 0) {
+				prime = false;
+				break; 
+			}
+
+			else {
+				continue;
+			}
+		}
+		// 4 + 5 = 0
+		// 4 + " hello" = "4 hello";
+
+		return prime;
+	}
+
+	function greatestPrime() {
+		var t0 = performance.now()
+		var x = 1000000000;
+	for(var i = x; i>= 1; i--)
+		if (isPrime(i)) {
+			var t1 = performance.now()
+
+			alert (i + "/nCalltook " + (t1 - t0) + milliseconds) ;
+		}
+		
+		else {
+			continue;
+
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>Hello World! This is Catherine's first webpage!</h1>
+	<h2>My Hobbies</h2>
+	<ul>
+<li>Video Games</li>
+<ol type="1">
+	<li>Minecraft</li>
+	<li>Valorant</li>
+	<li>Steam Games</li>
+</ol>
+<li>Drawing</li>
+<li>Reading Books</li>
+<li>Sports</li>
+<ol type="1">
+	<li>basketball</li>
+	<li>baseball</li>
+	<li>soccer</li>
+</ol>
+<li>Watching Anime</li>
+	</ul>
+	<hr>
+	<b>My Favorite Website:</b> <a href="https://youtube.com">YouTube</a>
+	<br>
+	<i>My Favorite Pokemon:</i>
+	<img src="https://cdn.discordapp.com/attachments/755918357039022210/809263279863103488/rowlet.jpg.jpg" />
+	<br>
+	<u>My Social Media</u>
+	<a href="https://instagram.com" target="_blank"> <img src="images/instagram.png" /></a>&nbsp;&nbsp;
+	<br>
+	<hr>
+	<br>
+	
+<table border="1">
+<tr>
+	<td>appa</td>
+	<td>umma</td>
+	<td>unni</td>
+	<td>jjun</td>
+</tr>
+
+<tr>
+	<td><img src="images/appa.png.jpg"></td>
+	<td><img src="images/umma.jpg"></td>
+	<td><img src="images/unni.jpg"></td>
+	<td><img src="images/jjun.jpg"></td>
+</tr>
+
+<tr>
+	<td rowspan="9">celebrity crush</td>
+	<td colspan="3">Hyunjin</td>
+</tr>
+
+<tr>
+	<td><img src="images/Hyunjin.jpg"></td>
+</tr>
+
+	</table>
+	<br>
+	<hr>
+	<br>
+	<button onclick="isPrime()">Check Prime</button>
