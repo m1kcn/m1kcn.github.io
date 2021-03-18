@@ -1,0 +1,8 @@
+#gameBoard {
+	display: inline-block; 
+}
+
+#playerInfo {
+	display: inline-block;
+	vertical-align: top;
+}
