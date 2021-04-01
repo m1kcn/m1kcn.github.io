@@ -70,7 +70,7 @@ builder
 		<input type="text" id="player2Name" placeholder="Please enter your name" size="25"/>
 		<br>
 		<br>
-		<select id="player2Image" onchange="enterplayer('player2')">
+		<select id="player2Image" onchange="enterPlayer('player2')">
 			<option value="#">--Select your avatar--</option>
 			<option value="solgaleo">solgaleo</option>
 			<option value="lunala">lunala</option>
@@ -79,6 +79,12 @@ builder
 		<div id="player2Info"></div>
 	</div>
 <div>
+
+<div>
+	<button onclick="reset()">reset</button>
+</div>
+
+
 <button onclick="isPalindrome()">Check Palindrome</button>
 <br>
 <button onclick="convertRoman()">Check Roman</button>
@@ -86,22 +92,47 @@ builder
 	
 	<h1 style="font-size:50px">!TicTacToe!</h1>
 	<table border="1">
-	<tr>
-		<td style="background-color: #C1DDEE"></td>
-		<td style="background-color: #D3EEC1"></td>
-		<td style="background-color: #C1DDEE"></td>
-	</tr>
+		<tr>
+			<td id="square0" onclick="changeSquare('square0')" style="background-color: #C1DDEE"></td>
+			<td id="square1" onclick="changeSquare('square1')" style="background-color: #D3EEC1"></td>
+			<td id="square2" onclick="changeSquare('square2')" style="background-color: #C1DDEE"></td>
+		</tr>
 
-	<tr>
-		<td style="background-color: #D3EEC1"></td>
-		<td style="background-color: #C1DDEE"></td>
-		<td style="background-color: #D3EEC1"></td>
-	</tr>
+		<tr>
+			<td id="square3" onclick="changeSquare('square3')" style="background-color: #D3EEC1"></td>
+			<td id="square4" onclick="changeSquare('square4')" style="background-color: #C1DDEE"></td>
+			<td id="square5" onclick="changeSquare('square5')" style="background-color: #D3EEC1"></td>
+		</tr>
 
-	<tr>
-		<td style="background-color: #C1DDEE"></td>
-		<td style="background-color: #D3EEC1"></td>
-		<td style="background-color: #C1DDEE"></td>
+		<tr>
+			<td id="square6" onclick="changeSquare('square6')" style="background-color: #C1DDEE"></td>
+			<td id="square7" onclick="changeSquare('square7')" style="background-color: #D3EEC1"></td>
+			<td id="square8" onclick="changeSquare('square8')" style="background-color: #C1DDEE"></td>
 	</tr>
+	</table>
+
+<script>
+	var counter = 0;
+	var builder = "<table>";
+	for (var i = 0; i < 3; i++) {
+		builder += "<tr>";
+		for (var j = 0; j < 3; j++){
+			if (counter % 2 == 0){
+				builder += "td onclick='changeSquare(\"square" + counter + "\")' class='even' id='square" + counter + "'></td>";
+			}
+
+			else {
+				builder += "<td onclick'changeSquare(\"square" + counter + "\"' class='odd' id='square" + counter + "'></td>";
+			}
+			counter++;
+		}
+
+		builder +="</tr>";
+
+		
+	}
+</script>
+
+
 </body>
 </html>
